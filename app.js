@@ -1,1 +1,7 @@
-console.log("Hello Node!");
+//console.log("Hello Node!");
+
+const fs = require('fs');
+fs.readFile('file.txt', 'utf8', function (err, data) {
+ if (err) throw err;
+ console.log(data);
+});
